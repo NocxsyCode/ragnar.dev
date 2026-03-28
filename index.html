@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ragnar | Link in Bio</title>
+    <meta name="description" content="Kişisel bağlantılar ve sosyal medya hesaplarım.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <h1 class="glitch" data-text="click to enter">click to enter</h1>
+            <p class="sub-text">designed for Maisecim</p>
+        </div>
+    </div>
+
+    <div id="main-content" class="main-content hidden">
+        <div class="content-wrapper">
+            <header class="profile-header">
+                <div class="avatar-container">
+                    <img src="avatar.png" alt="Profile Avatar" class="profile-avatar" id="user-avatar">
+                    <img id="user-decoration" class="avatar-decoration hidden" alt="">
+                    <div id="status-dot" class="status-dot offline"></div>
+                </div>
+                <h1 class="profile-name" id="user-name">Ragnar</h1>
+                <p class="profile-bio" id="user-tag">merhabalar ben Ragnar :)</p>
+                <div id="user-activity" class="activity-card hidden">
+                    <div class="activity-header">
+                        <span id="activity-type-label">Oynuyor</span>
+                        <div class="activity-dots"><span></span><span></span><span></span></div>
+                    </div>
+                    <div class="activity-body">
+                        <div class="activity-assets">
+                            <img id="activity-large-img" src="" alt="" class="large-img">
+                            <img id="activity-small-img" src="" alt="" class="small-img hidden">
+                        </div>
+                        <div class="activity-info">
+                            <div id="activity-name" class="activity-name">Oyun İsmi</div>
+                            <div id="activity-details" class="activity-details">Detaylar...</div>
+                            <div id="activity-state" class="activity-state">Durum...</div>
+                            <div id="activity-time" class="activity-time">
+                                <i class="fa-solid fa-gamepad"></i> 00:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-player">
+                    <div class="song-info">
+                        <marquee behavior="scroll" direction="left" id="current-song-tag">Müzik: Ragnar - Bio</marquee>
+                    </div>
+                    <div class="volume-container">
+                        <i class="fa-solid fa-volume-low"></i>
+                        <input type="range" id="volume-slider" min="0" max="100" value="50">
+                    </div>
+                </div>
+                <div class="profile-location">
+                    <i class="fa-solid fa-location-dot"></i> Turkey
+                </div>
+            </header>
+
+            <div class="social-links">
+                <a href="https://discord.com/users/1219710011136147556/" class="social-icon" id="discord" title="Discord" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.tiktok.com/@ragnarlodbrok.dev?_r=1&_d=f1lf1kkam7cc2c&sec_uid=MS4wLjABAAAA0pegTYA94uG4tgpN2zMGyVhNNSiHeu_gYibyI3AUpTYrWNliy8q6yZE79-rjZlZe&share_author_id=7198975227220689925&sharer_language=tr&source=h5_m&u_code=e6bc04lm6kab99&timestamp=1774713503&user_id=7198975227220689925&sec_user_id=MS4wLjABAAAA0pegTYA94uG4tgpN2zMGyVhNNSiHeu_gYibyI3AUpTYrWNliy8q6yZE79-rjZlZe&item_author_type=1&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7621177540498409237&share_link_id=fbd027a3-e9f4-4d48-9e40-20f896916126&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1" class="social-icon" id="tiktok" title="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://youtube.com/@ragnarlodbrokdev?si=BmeQB38kGZ8gCx39" class="social-icon" id="youtube" title="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="action-buttons">
+                <a href="#" class="btn-primary">Kategoriler</a>
+                <a href="#" class="btn-primary">İletişim</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-glow"></div>
+    <div id="particles-js"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
